@@ -1,4 +1,4 @@
-# SiRGraf-A Simple Radial Gradient Filter for Batch-Processing of Coronagraph Images
+# SiRGraF-A Simple Radial Gradient Filter for Batch-Processing of Coronagraph Images
 This algorithm is based on subtracting a minimum background (F-corona) created using long-duration images and then dividing the resultant by a uniform-intensity-gradient image to enhance the K-corona. We demonstrate the utility of this algorithm to bring out the short-time-scale transient structures of the corona. SiRGraF can be used to reveal and analyse such structures. 
 ------------------------------------------------------------------------------------------------------------------
 This code has 3 functions- sif (Returns all variables and images), plot(Shows a combined plot) ,animation_m (plays the movie).
