@@ -8,4 +8,4 @@ Import the .py file in your code or terminal and input the path into the require
 <img src="https://user-images.githubusercontent.com/18225725/213918693-0e6f27b8-63f2-47b7-8bdd-df2eb44d92f5.png" width="30%" height="30%"/>
 </p>
 <p align="middle"> <img src="https://user-images.githubusercontent.com/18225725/213918700-90b3ef0c-7ec4-49fa-8d7c-075e65e94112.gif" width="40%" height="40%" /> </p>
-If you use this algorithm, please cite [Patel,R et. al](https://rdcu.be/c3Xcd)
+If you use this algorithm, please cite <a href="https://rdcu.be/c3Xcd">Patel,R et. al</a>
