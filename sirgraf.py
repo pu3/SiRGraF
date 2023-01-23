@@ -189,3 +189,22 @@ def animation_m(path):
 		im.set_clim(1/np.min(np.abs(ima1[i])),-np.min(np.abs(ima1[i]))+0.1)
 		tx.set_text('Date: '+date+' Time: '+time[i])
 	ani = animation.FuncAnimation(fig, animate, frames=len(ima1))
+	#pause
+	ani.event_source.stop()
+	#unpause
+	ani.event_source.start()
+	plt.show()
+	yn=input('Do you want to save the animation as mp4? : ')
+	if yn.lower().startswith('y'):
+		fr=input('Input frame rate : ')
+		nm=input('Name of the file : ')
+		if platform.system()=='Linux':
+			FFwriter = animation.FFMpegWriter(fps=int(fr))
+			ani.save(nm+'.mp4', writer = FFwriter,dpi=300)
+		if platform.system()=='Windows':
+			Pwriter = animation.PillowWriter(fps=int(fr))
+			fpath=os.getcwd()
+			cnm=os.path.join(fpath, nm+".gif")
+			ani.save(cnm, writer = Pwriter,dpi=300)
+			clip = mp.VideoFileClip(cnm)
+			clip.write_videofile(os.path.join(fpath,nm+".mp4"))
